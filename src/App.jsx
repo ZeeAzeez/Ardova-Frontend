@@ -8,7 +8,7 @@ function App() {
 
   const fetchRepoInfo = async () => {
     try {
-      const response = await axios.get(`http://localhost:3000/github/repo_info?repo_name=${repoName}`);
+      const response = await axios.get(`https://ardova-backend.onrender.com/github/repo_info?repo_name=${repoName}`);
       setRepoInfo(response.data);
       setError('');
     } catch (err) {
